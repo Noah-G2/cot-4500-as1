@@ -112,6 +112,12 @@ if __name__ == "__main__":
     # caveat with this method is it only finds sqrt(2)...how can we find a zero of any function?
     #babylonian_method(10)
     # bisection gives us#This section was taken from code given in class, then modified**
+    left = -4
+    right = 7
+    function_string = "x**3 + (4*(x**2)) - 10"
+    Number6_1 = bisection_method(left, right, function_string)
+       
+    
 def custom_derivative(value):
     return (3 * value* value) + (8 * value)
 def newton_raphson(initial_approximation: float, tolerance: float, sequence: str):
@@ -141,7 +147,7 @@ if __name__ == "__main__":
     initial_approximation: float = 7
     tolerance: float = .0001
     sequence: str = "x**3 + (4*(x**2)) - 10"
-    Number6_2 = newton_raphson(initial_approximation, tolerance, sequence) the first zero of any function to a certain error threshold
+    Number6_2 = newton_raphson(initial_approximation, tolerance, sequence)
     left = -4
     right = 7
     function_string = "x**3 + (4*(x**2)) - 10"
